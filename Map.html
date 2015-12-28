@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Setting up the map</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNZmt2442shTeIGncL0NUqkNDmRWKQYLc&signed_in=true&libraries=places&callback=initMap" async defer></script>
+	<script>
+        function initMap() {
+			var map = new google.maps.Map(document.getElementById('map'),{
+				mapTypeControl:false,
+				center: {lat:43,lng:-77},
+				zoom:15
+			});            
+		}
+	</script>
+	<div id="map"></div>
+</body>
+</html>
